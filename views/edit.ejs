@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create file page
+    </title>
+    <link rel="stylesheet" href="/stylesheets/styleEdit.css">
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <a href="/">Home</a>
+            <a href="/create">Create new file</a>
+        </div>
+        <h2>Edit File</h2>
+        <form action="/update/<%= fileName%>" method="post">
+            <input disabled="true" type="text" name="fileName" value="<%= fileName %>">
+            <!-- <h3><%= fileName %></h3> -->
+            <textarea name="fileData"><%= fileData %></textarea>
+            <input id="update" type="submit" value="Update file">
+        </form>
+    </div>
+</body>
+</html>

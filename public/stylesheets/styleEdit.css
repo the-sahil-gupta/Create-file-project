@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: silver;
+    padding: 4vh 10vh;
+    width: 100%;
+    min-height: 100vh;
+}
+#nav{
+    display: flex;
+    gap: 4vw;
+    margin-bottom: 5vh;
+}
+#nav a{
+    color: blue;
+    font-weight: 600;
+    text-decoration: none;
+}
+form{
+    width: 26vw;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1vh;
+}
+form input,
+form textarea{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    resize: none;
+    border: none;
+    border-radius: 0.6vh;
+}
+form textarea{
+    margin-top: 1vh;
+    height: 14vh;
+}
+form #update{
+    width: 100%;
+    border-radius: 2vw;
+    padding: 1.5vh 2vh;
+    background-color: rgb(255, 255, 12);
+    color: #000;
+    font-size: 2vh;
+    font-weight: 600;
+}

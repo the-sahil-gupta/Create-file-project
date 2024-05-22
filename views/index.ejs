@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page to create file</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <a href="/">Home</a>
+            <a href="/create">Create new file</a>
+        </div>
+        <h2>Files</h2>
+        <div id="files">
+            <% files.forEach(fileObj => { %>
+                <div class="file">
+                    <div class="fileContent">
+                        <h3><%= fileObj.fileName %></h3>
+                        <p><%= fileObj.fileData %></p>
+                    </div>
+                    <div class="fileEditor">
+                        <a href="/edit/<%= fileObj.fileName %>">edit</a><a href="/delete/<%= fileObj.fileName %>">delete</a>
+                    </div>
+                </div>
+            <% }); %>    
+        </div>
+    </div>
+</body>
+</html>

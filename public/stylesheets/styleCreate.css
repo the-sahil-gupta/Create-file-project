@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: silver;
+    padding: 4vh 10vh;
+    width: 100%;
+    min-height: 100vh;
+}
+#nav{
+    display: flex;
+    gap: 4vw;
+    margin-bottom: 5vh;
+}
+#nav a{
+    color: blue;
+    font-weight: 600;
+    text-decoration: none;
+}
+form{
+    width: 26vw;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1vh;
+}
+form input,
+form textarea{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    resize: none;
+    border: none;
+    border-radius: 0.6vh;
+}
+form textarea{
+    height: 14vh;
+}
+form #submit{
+    width: 100%;
+    border-radius: 0.5vw;
+    padding: 1.5vh 2vh;
+    background-color: rgb(45, 45, 255);
+    color: #fff;
+    font-size: 2vh;
+}

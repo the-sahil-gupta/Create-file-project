@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create file page
+    </title>
+    <link rel="stylesheet" href="/stylesheets/styleCreate.css">
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <a href="/">Home</a>
+            <a href="/create">Create new file</a>
+        </div>
+        <h2>Create File</h2>
+        <form action="/create" method="post">
+            <input type="text" placeholder="File name" name="fileName">
+            <textarea placeholder="File data" name="fileData"></textarea>
+            <input id="submit" type="submit" value="Create file">
+        </form>
+    </div>
+</body>
+</html>
