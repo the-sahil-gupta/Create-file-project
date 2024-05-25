@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const fs = require("fs");
+const mongoose = require("mongoose");       // NRDB
 
 app.set("view engine", "ejs");
 
@@ -48,5 +49,27 @@ app.post("/update/:filename", function (req, res){
         else res.redirect("/");
     })
 })
+
+
+// It creates "database" of collections
+mongoose.connect("https://127.0.0.1:27017/databasename");
+
+// It creates "schema" "document" of single user using fields
+const userSchema = mongoose.Schema({
+    name: String,
+    email: String,
+    contact: String
+});
+
+// It creates "collection" of document
+module.exports = mongoose.model("User", "userSchema");
+
+
+
+
+
+
+
+
 
 app.listen(port);
